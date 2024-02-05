@@ -10,6 +10,10 @@ export default function List() {
       task: "Javascript",
       time: "01:00:00",
     },
+    {
+      task: "Typescript",
+      time: "01:00:00",
+    },
   ];
   return (
     <aside>
