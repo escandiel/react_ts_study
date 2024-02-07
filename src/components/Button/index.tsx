@@ -1,9 +1,9 @@
 import React from "react";
+import "./style.scss";
 
 class Button extends React.Component {
   render() {
-    const isActive = false;
-    return <button>Button</button>;
+    return <button className="botao">Button</button>;
   }
 }
 
