@@ -1,14 +1,18 @@
 import Button from "../Button";
+import Watch from "./Watch";
+import style from "./Stopwatch.module.scss";
 
-export function Stopwatch() {
+export default function Stopwatch() {
   return (
-    <>
-      <div>
-        <p>Choose a card and start the stopwatch</p>
+    <div className={style.cronometro}>
+      <p className={style.titulo}>Choose a card and start the stopwatch</p>
+      <div className={style.relogioWrapper}>
+        <Watch />
       </div>
+
       <div>
         <Button>Begin</Button>
       </div>
-    </>
+    </div>
   );
 }
