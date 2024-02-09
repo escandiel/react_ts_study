@@ -3,6 +3,10 @@ import Button from "../Button";
 import "./style.scss";
 
 class Form extends React.Component {
+  state = {
+    task: "",
+    time: "00:00",
+  };
   render() {
     return (
       <form className="novaTarefa">
@@ -22,6 +26,10 @@ class Form extends React.Component {
             type="time"
             step="1"
             name="time"
+            value={this.state.time}
+            onChange={(event) =>
+              this.setState({ ...this.state, time: event.target.value })
+            }
             id="time"
             min="00:00:00"
             max="01:30:00"
